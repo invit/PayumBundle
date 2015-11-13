@@ -85,12 +85,12 @@ services:
     acme.foo_gateway_factory:
         class: Payum\Core\GatewayFactory
         tags:
-            - { name: payum.gateway, name: foo, human_name: Foo }
+            - { name: payum.gateway, factory_name: foo, human_name: Foo }
 ```
 
 Attributes:
 
-* name - The name of the factory
+* factory_name - The name of the factory
 
 * human_name - The name shown to humans, in the backend for example.
 
